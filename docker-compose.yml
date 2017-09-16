@@ -1,0 +1,11 @@
+version: '3'
+services:
+  minecraft:
+    build: ./
+    ports:
+      - 25566:25565
+    volumes:
+      - ./world:/data/world
+      - ./logs:/data/logs
+    environment: 
+      - EULA:TRUE
