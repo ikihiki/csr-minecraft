@@ -8,4 +8,4 @@ services:
       - ./world:/data/world
       - ./logs:/data/logs
     environment: 
-      - EULA: "TRUE"
+      - EULA=TRUE
