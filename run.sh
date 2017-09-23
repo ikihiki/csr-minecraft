@@ -1,3 +1,4 @@
+docker stop minecraft
 docker rm minecraft
 docker rmi csr-minecraft
 mkdir data
