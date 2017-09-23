@@ -1,0 +1,1 @@
+docker run -d  -p 25566:25565 -v ./world:/data/world -v ./logs:/data/logs -e EULA=TRUE --name minecraft ./
