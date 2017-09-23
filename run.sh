@@ -1,2 +1,8 @@
+docker rm minecraft
+docker rmi csr-minecraft
+mkdir data
+mkdir config
+mkdir mods
+mkdir plugins
 docker build -t csr-minecraft ./
-docker run -d -u 1000:1000 -p 25566:25565 -v world:/data/world -v logs:/data/logs -e EULA=TRUE --name minecraft csr-minecraft
+docker run -d  -p 25566:25565 -v data:/data -v config:/config -v mods:/mods -v plugins:/plugins -e EULA=TRUE --name minecraft csr-minecraft
